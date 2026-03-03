@@ -32,6 +32,13 @@
                 <action android:name="androidx.media3.session.MediaLibraryService"/>
             </intent-filter>
         </service>
+
+        <service android:name=".MusicIpcService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.musicserver.BIND_MUSIC_IPC"/>
+            </intent-filter>
+        </service>
         
     </application>
 
